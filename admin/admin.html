@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Miss House</title>
+        <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/fontawesome.min.css">
+        <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.min.css">
+        <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/regular.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper" class="d-flex">
+            <div id="navbar" class="col-lg-2">
+                <div class="logo" style="justify-content: center; padding: 0 8px;">
+                    <img src="./img/logo-sneaker1-removebg-preview.png" style="height: 80px; scale: 1; align-self: center;"/>
+                    <h6 style="align-self: center; color: #696CFF;">Miss House</h6>
+                </div>
+                <div class="nav">
+                    <ul class="list-items">
+                        <li class="item active"><a href=""><i class="fa-solid fa-home"></i>Trang chủ</a></li>
+                        <li class="item"><a href=""><i class="fa-solid fa-user"></i>Khách hàng</a></li>
+                        <li class="item"><a href=""><i class="fa-solid fa-cubes-stacked"></i>Sản phẩm</a></li>
+                        <li class="item"><a href=""><i class="fa-solid fa-bookmark"></i>Đơn đặt hàng</a></li>
+                        <li class="item"><a href=""><i class="fa-solid fa-feather-alt"></i>Giảm giá</a></li>
+                        <li class="item"><a href=""><i class="fa-solid fa-box"></i>Kho hàng</a></li>
+                        <li class="item"><a href=""><i class="fa-solid fa-gears"></i>Cài đặt</a></li>
+                        <div class="pseudo-nav"></div>
+                    </ul>
+        
+                </div>
+            </div>
+            <div id="content" class="col-lg-10">
+                <div class="search-content d-flex">
+                    <div class="btn-toggle m-4" style="cursor: pointer;">
+                        <i class="fa-solid fa-list-numeric"></i>
+                    </div>
+                    <div class="search-common d-flex">
+                        <div class="search-form d-flex align-items-center">
+                            <i class="fa-solid fa-search"></i>
+                            <input class="form-control border-0 shadow-none" type="text" placeholder="Tìm kiếm ..."/>
+                        </div>
+                        <div class="search-info">
+                            <img src="./img/icons8-user-64.png" alt="">
+                        </div>
+                    </div>
+                    <div id="dropdown-user">
+                        <div class="dropdown-header">
+                            <img src="./img/icons8-user-64.png" alt="">
+                            <div class="header-text">
+                                <h6>Miss Trang</h6>
+                                <p>Quản lý</p>
+                            </div>
+                        </div>
+                        <div class="dropdown-feature">
+                            <ul>
+                                <li><i class="fa-solid fa-line-chart"></i>Tầm phát triển</li>
+                                <li><i class="fa-solid fa-gear"></i>Cài đặt</li>
+                                <li><i class="fa-solid fa-receipt"></i>Hóa đơn</li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-out">
+                            <i class="fa-solid fa-sign-out"></i>Đăng xuất
+                        </div>
+                    </div>
+                </div>
+                <div class="body-content">
+                    <div class="body-intro">
+                        <div class="intro-brand d-flex">
+                            <div class="intro-text">
+                                <h6>Chào mừng bạn đến với Miss House</h6>
+                                <p>Nơi nâng tầm đẳng cấp của bạn. Chúng tôi ở đây là để biến sự hoàn hảo thành phong cách của chính bạn.</p>
+                                <button class="button-text">Xem thêm</button>
+                            </div>
+                            <div class="intro-image">
+                                <img src="../assets/img/logo/pngtree-fashion-beauty-in-cartoon-shopping-png-image_883800-removebg-preview.png" alt="">
+                            </div>
+                        </div>
+                        <div class="intro-type-common d-flex">
+                            <div class="intro-type d-flex">
+                                <div class="intro-type-image">
+                                    <img src="./img/customer-service.png" />
+                                </div>
+                                <h6>Sản phẩm</h6>
+                                <h3>2023</h3>
+                                <span>+15%</span>
+                            </div>
+                            <div class="intro-type d-flex">
+                                <div class="intro-type-image">
+                                    <img src="./img/delivery-box.png" />
+                                </div>
+                                <h6>Khách hàng</h6>
+                                <h3>11500</h3>
+                                <span>+21.5%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-figure">
+                        <div class="figure-customer">
+                            <h5>Khách hàng mua nhiều nhất trong tháng 12</h5>
+                            <div class="figure-action d-flex">
+                                <button class="btn btn-success">Xuất file excel</button>
+                                <input id="myInput" class="shadow-none" type="text" placeholder="Khách hàng ...">
+                            </div>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                      <th scope="col">STT</th>
+                                      <th scope="col">Tên khách hàng</th>
+                                      <th scope="col">Tổng tiền tiêu</th>
+                                      <th scope="col">Khách hàng thân thiết</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody id="myTable">
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>Việt Đức</td>
+                                      <td>11.500.000</td>
+                                      <td>25%</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">2</th>
+                                      <td>Huyền Trang</td>
+                                      <td>10.400.800</td>
+                                      <td>18%</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">3</th>
+                                      <td>Phúc Hưng</td>
+                                      <td>5.600.300</td>
+                                      <td>12%</td>
+                                    </tr>
+                                  </tbody>
+                            </table>
+                            <div class="figure-all">
+                                <div class="figure-revenue-money">
+                                    <img src="./img/revenue.png" alt="">
+                                    <h6>Tăng trưởng: <span>24.17%</span></h6>
+                                </div>
+                                <div class="figure-revenue-money">
+                                    <img src="./img/money.png" alt="">
+                                    <h6>Tổng thu nhập: <span>3M$</span></h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-info">
+                            <h5>Thông tin người dùng</h5>
+                            <div class="info">
+                                <div class="user-detail">
+                                    <img src="./img/6.png" alt="">
+                                    <div class="detail-intro">
+                                        <h6>Miss Trang</h6>
+                                        <h6>17 - 03 - 2001</h6>
+                                        <h6>Quản lý cửa hàng</h6>
+                                        <h6>Kinh nghiệm: 5 năm</h6>
+                                    </div>
+                                </div>
+                                <div class="user-option">
+                                    <button class="button-text">Tải ảnh lên</button>
+                                    <button class="button-text">Cập nhât thông tin</button>
+                                </div>
+                                <div class="user-certificate">
+                                    <img src="./img/icons8-certificate-50.png"/>
+                                    <h6>Chứng nhận</h6>
+                                    <p>Huyền Trang</p>
+                                    <span>Quản lý ưu tú của tổ chức International Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
