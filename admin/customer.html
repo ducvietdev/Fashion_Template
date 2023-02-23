@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Miss House</title>
+        <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/fontawesome.min.css">
+        <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.min.css">
+        <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/regular.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper" class="d-flex">
+            <div id="navbar" class="col-lg-2">
+                <div class="logo" style="justify-content: center; padding: 0 8px;">
+                    <img src="./img/logo-sneaker1-removebg-preview.png" style="height: 80px; scale: 1; align-self: center;"/>
+                    <h6 style="align-self: center; color: #696CFF;">Miss House</h6>
+                </div>
+                <div class="nav">
+                    <ul class="list-items">
+                        <li class="item"><a href="./admin.html"><i class="fa-solid fa-home"></i>Trang chủ</a></li>
+                        <li class="item active"><a href=""><i class="fa-solid fa-user"></i>Khách hàng</a></li>
+                        <li class="item"><a href="./product.html"><i class="fa-solid fa-cubes-stacked"></i>Sản phẩm</a></li>
+                        <li class="item"><a href=""><i class="fa-solid fa-bookmark"></i>Đơn đặt hàng</a></li>
+                        <li class="item"><a href=""><i class="fa-solid fa-feather-alt"></i>Giảm giá</a></li>
+                        <li class="item"><a href=""><i class="fa-solid fa-box"></i>Kho hàng</a></li>
+                        <li class="item"><a href=""><i class="fa-solid fa-gears"></i>Cài đặt</a></li>
+                        <div class="pseudo-nav-cus"></div>
+                    </ul>
+                </div>
+            </div>
+            <div id="content" class="col-lg-10">
+                <div class="search-content d-flex">
+                    <div class="btn-toggle m-4" style="cursor: pointer;">
+                        <i class="fa-solid fa-list-numeric"></i>
+                    </div>
+                    <div class="search-common d-flex">
+                        <div class="search-form d-flex align-items-center">
+                            <i class="fa-solid fa-search"></i>
+                            <input class="form-control border-0 shadow-none" type="text" placeholder="Tìm kiếm ..."/>
+                        </div>
+                        <div class="search-info">
+                            <img src="./img/icons8-user-64.png" alt="">
+                        </div>
+                    </div>
+                    <div id="dropdown-user">
+                        <div class="dropdown-header">
+                            <img src="./img/icons8-user-64.png" alt="">
+                            <div class="header-text">
+                                <h6>Miss Trang</h6>
+                                <p>Quản lý</p>
+                            </div>
+                        </div>
+                        <div class="dropdown-feature">
+                            <ul>
+                                <li><i class="fa-solid fa-line-chart"></i>Tầm phát triển</li>
+                                <li><i class="fa-solid fa-gear"></i>Cài đặt</li>
+                                <li><i class="fa-solid fa-receipt"></i>Hóa đơn</li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-out">
+                            <i class="fa-solid fa-sign-out"></i>Đăng xuất
+                        </div>
+                    </div>
+                </div>
+                <div class="body-customer">
+                    <div class="list-customer">
+                        <h5>Danh sách khách hàng tích điểm thân thiết</h5>
+                        <div class="customer-friendly">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                      <th scope="col">STT</th>
+                                      <th scope="col">Tên khách hàng</th>
+                                      <th scope="col">Số điện thoại</th>
+                                      <th scope="col">Điểm tích lũy</th>
+                                      <th scope="col">Ưu đãi</th>
+                                      <th scope="col">Lịch sử mua hàng</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody id="myTable">
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>Nguyễn Việt Đức</td>
+                                      <td>0347520424</td>
+                                      <td>200</td>
+                                      <td>5%</td>
+                                      <td>Áo sơ mi - 17/03/2022</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Nguyễn Việt Đức</td>
+                                        <td>0347520424</td>
+                                        <td>200</td>
+                                        <td>5%</td>
+                                        <td>Áo sơ mi - 17/03/2022</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td>Nguyễn Việt Đức</td>
+                                        <td>0347520424</td>
+                                        <td>200</td>
+                                        <td>5%</td>
+                                        <td>Áo sơ mi - 17/03/2022</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">4</th>
+                                        <td>Nguyễn Việt Đức</td>
+                                        <td>0347520424</td>
+                                        <td>200</td>
+                                        <td>5%</td>
+                                        <td>Áo sơ mi - 17/03/2022</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">5</th>
+                                        <td>Nguyễn Việt Đức</td>
+                                        <td>0347520424</td>
+                                        <td>200</td>
+                                        <td>5%</td>
+                                        <td>Áo sơ mi - 17/03/2022</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">6</th>
+                                        <td>Nguyễn Việt Đức</td>
+                                        <td>0347520424</td>
+                                        <td>200</td>
+                                        <td>5%</td>
+                                        <td>Áo sơ mi - 17/03/2022</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">7</th>
+                                        <td>Nguyễn Việt Đức</td>
+                                        <td>0347520424</td>
+                                        <td>200</td>
+                                        <td>5%</td>
+                                        <td>Áo sơ mi - 17/03/2022</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">8</th>
+                                        <td>Nguyễn Việt Đức</td>
+                                        <td>0347520424</td>
+                                        <td>200</td>
+                                        <td>5%</td>
+                                        <td>Áo sơ mi - 17/03/2022</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">9</th>
+                                        <td>Nguyễn Việt Đức</td>
+                                        <td>0347520424</td>
+                                        <td>200</td>
+                                        <td>5%</td>
+                                        <td>Áo sơ mi - 17/03/2022</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">10</th>
+                                        <td>Nguyễn Việt Đức</td>
+                                        <td>0347520424</td>
+                                        <td>200</td>
+                                        <td>5%</td>
+                                        <td>Áo sơ mi - 17/03/2022</td>
+                                      </tr>
+                                  </tbody>
+                            </table>
+                            <div class="user-option">
+                                <button class="button-text">Thông báo sự kiện</button>
+                                <button class="button-text">Ngẫu nhiên nhận giải</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customer-lucky" style="padding: 24px;">
+                        <h5 style="text-align: center;">Khách hàng may mắn</h5>
+                        <div class="luckily">
+                            <div class="customer-happy d-flex flex-column align-items-center">
+                                <img style="width: 100px; border-radius: 50%;" src="./img/6.png" alt="">
+                                <p>Mã khách: 345</p>
+                                <p>Giải nhất</p>
+                            </div>
+                            <div class="customer-happy d-flex flex-column align-items-center">
+                                <img style="width: 100px; border-radius: 50%;" src="./img/1.png" alt="">
+                                <p>Mã khách: 124</p>
+                                <p>Giải nhì</p>
+                            </div>
+                            <div class="customer-happy d-flex flex-column align-items-center">
+                                <img style="width: 100px; border-radius: 50%;" src="./img/7.png" alt="">
+                                <p>Mã khách: 251</p>
+                                <p>Giải ba</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
