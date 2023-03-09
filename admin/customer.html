@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/regular.min.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="responsive.css">
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sidebars/">        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     </head>
     <body>
@@ -23,14 +24,34 @@
                 </div>
                 <div class="nav">
                     <ul class="list-items">
+                        <li class="item item-collapse">
+                          <button class="border-0 bg-transparent collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                            <i class="fa-solid fa-code"></i>Tổng quan <i class="fa-solid fa-angle-right"></i>
+                          </button>
+                          <div style="width: 100%;" class="collapse" id="home-collapse">
+                            <ul class="sub-list-items" style="padding: 0;">
+                              <li class="item"><a href="#" class="link-dark d-inline-flex text-decoration-none rounded"><i style="font-size: 8px; align-self: center; margin: 0;" class="fa-regular fa-circle"></i>Bài viết</a></li>
+                              <li class="item"><a href="#" class="link-dark d-inline-flex text-decoration-none rounded"><i style="font-size: 8px; align-self: center; margin: 0;" class="fa-regular fa-circle"></i>Thành tựu</a></li>
+                              <li class="item"><a href="#" class="link-dark d-inline-flex text-decoration-none rounded"><i style="font-size: 8px; align-self: center; margin: 0;" class="fa-regular fa-circle"></i>Phát triển</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="item item-collapse">
+                          <button class="border-0 bg-transparent collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                            <i class="fa-solid fa-bolt"></i>Quản lý <i class="fa-solid fa-angle-right"></i>
+                          </button>
+                          <div style="width: 100%;" class="collapse" id="dashboard-collapse">
+                            <ul class="sub-list-items" style="padding: 0;">
+                              <li class="item"><a href="#" class="link-dark d-inline-flex text-decoration-none rounded"><i style="font-size: 8px; align-self: center; margin: 0;" class="fa-regular fa-circle"></i>Lương</a></li>
+                              <li class="item"><a href="#" class="link-dark d-inline-flex text-decoration-none rounded"><i style="font-size: 8px; align-self: center; margin: 0;" class="fa-regular fa-circle"></i>Nhân viên</a></li>
+                            </ul>
+                          </div>
+                        </li>
                         <li class="item"><a href="./admin.html"><i class="fa-solid fa-home"></i>Trang chủ</a></li>
                         <li class="item active"><a href=""><i class="fa-solid fa-user"></i>Khách hàng</a></li>
                         <li class="item"><a href="./product.html"><i class="fa-solid fa-cubes-stacked"></i>Sản phẩm</a></li>
                         <li class="item"><a href=""><i class="fa-solid fa-bookmark"></i>Đơn đặt hàng</a></li>
-                        <li class="item"><a href=""><i class="fa-solid fa-feather-alt"></i>Giảm giá</a></li>
-                        <li class="item"><a href=""><i class="fa-solid fa-box"></i>Kho hàng</a></li>
                         <li class="item"><a href=""><i class="fa-solid fa-gears"></i>Cài đặt</a></li>
-                        <div class="pseudo-nav-cus"></div>
                     </ul>
                 </div>
             </div>
@@ -195,6 +216,8 @@
                 </div>
             </div>
         </div>
+        <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="sidebars.js"></script>
+        <script src="index.js"></script>
     </body>
-    <script src="index.js"></script>
 </html>

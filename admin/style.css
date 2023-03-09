@@ -31,6 +31,26 @@
     align-items: center;
 }
 
+.list-items .item-collapse {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.list-items .item-collapse .btn {
+    padding: 0;
+}
+
+.list-items .item-collapse .btn:hover{
+    background-color: transparent;
+}
+
+.list-items .item-collapse .sub-list-items li:hover
+{
+    background-color: rgba(105, 108, 255, 0.16) !important;
+    opacity: 0.8;
+}
+
 .list-items li.active {
     background-color: rgba(105, 108, 255, 0.16) !important;
     border-radius: 8px;
